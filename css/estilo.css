@@ -26,6 +26,7 @@
 }
 body{
     background: var(--bg-url) no-repeat top center/cover;
+    height: 100vh;
 }
 
 /*body com asterisco faz automatico pra pagina toda
@@ -181,3 +182,14 @@ footer{
     padding: 24px 0;
     text-align: center;
 }
+
+/*variar o tamanho*/
+ @media (min-width: 700px){
+    :root{
+        --bg-url: url(../assents/bg-desktop.jpg)
+    }
+
+    .light{
+        --bg-url: url(../assents/bg-desktop-light.jpg)
+    }
+ }
